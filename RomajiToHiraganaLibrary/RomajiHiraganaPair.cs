@@ -11,18 +11,23 @@ namespace RomajiToHiraganaLibrary
         /// <param name="hiragana">ひらがな</param>
         public RomajiHiraganaPair(string romaji, string hiragana)
         {
-            Romaji = romaji ?? throw new ArgumentNullException(nameof(romaji));
-            Hiragana = hiragana ?? throw new ArgumentNullException(nameof(hiragana));
+            if(romaji == null) throw new ArgumentNullException("romaji");
+            Romaji = romaji;
+
+            if(romaji == null) throw new ArgumentNullException("hiragana");
+            Hiragana = hiragana;
         }
 
+        private string _romaji = "";
         /// <summary>
         /// ローマ字を取得、設定します。
         /// </summary>
-        internal string Romaji { get; set; } = "";
+        internal string Romaji { get { return _romaji; } set { _romaji = value; } }
 
+        private string _hiragana = "";
         /// <summary>
         /// ひらがなを取得、設定します。
         /// </summary>
-        internal string Hiragana { get; set; } = "";
+        internal string Hiragana { get { return _hiragana; } set { _hiragana = value; } }
     }
 }
