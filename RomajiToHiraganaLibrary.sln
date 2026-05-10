@@ -2,8 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomajiToHiraganaLibrary", "RomajiToHiraganaLibrary\RomajiToHiraganaLibrary.csproj", "{6E624DF3-1855-4CC6-91F0-9EB871CF5851}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FBD69C4-6085-42D0-8454-40E7C9D478E2} = {4FBD69C4-6085-42D0-8454-40E7C9D478E2}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomajiToHiraganaLibrary_net40", "RomajiToHiraganaLibrary\RomajiToHiraganaLibrary_net40.csproj", "{218A56A6-0A7D-4A08-BBA1-14E08340FA7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FBD69C4-6085-42D0-8454-40E7C9D478E2} = {4FBD69C4-6085-42D0-8454-40E7C9D478E2}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{94912461-C704-485B-9489-D9D049482883}"
 EndProject

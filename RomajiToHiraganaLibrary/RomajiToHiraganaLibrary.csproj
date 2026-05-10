@@ -64,4 +64,7 @@
     <None Include="..\LICENSE" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"$(SolutionDir)\RomajiHiraganaPairMaker\bin\$(ConfigurationName)\RomajiHiraganaPairMaker.exe" /dict "$(SolutionDir)\RomajiHiraganaPairMaker\RomajiHiraganaPairs.xml" /out "$(ProjectDir)\RomajiToHiragana.cs"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
