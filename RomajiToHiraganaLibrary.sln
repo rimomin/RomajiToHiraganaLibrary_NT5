@@ -1,14 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomajiToHiraganaLibrary", "RomajiToHiraganaLibrary\RomajiToHiraganaLibrary.csproj", "{6E624DF3-1855-4CC6-91F0-9EB871CF5851}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomajiToHiraganaLibrary", "RomajiToHiraganaLibrary\RomajiToHiraganaLibrary.csproj", "{6E624DF3-1855-4CC6-91F0-9EB871CF5851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomajiToHiraganaLibrary_net40", "RomajiToHiraganaLibrary\RomajiToHiraganaLibrary_net40.csproj", "{218A56A6-0A7D-4A08-BBA1-14E08340FA7F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{94912461-C704-485B-9489-D9D049482883}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9D42628-72B1-4D28-AD32-5443CE345F04}"
 	ProjectSection(SolutionItems) = preProject
 		RomajiToHiraganaLibrary.vsmdi = RomajiToHiraganaLibrary.vsmdi
+		StringPairDictionary.xsd = StringPairDictionary.xsd
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomajiHiraganaPairMaker", "RomajiHiraganaPairMaker\RomajiHiraganaPairMaker.csproj", "{4FBD69C4-6085-42D0-8454-40E7C9D478E2}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -23,10 +28,16 @@ Global
 		{6E624DF3-1855-4CC6-91F0-9EB871CF5851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E624DF3-1855-4CC6-91F0-9EB871CF5851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E624DF3-1855-4CC6-91F0-9EB871CF5851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218A56A6-0A7D-4A08-BBA1-14E08340FA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218A56A6-0A7D-4A08-BBA1-14E08340FA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94912461-C704-485B-9489-D9D049482883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{94912461-C704-485B-9489-D9D049482883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94912461-C704-485B-9489-D9D049482883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94912461-C704-485B-9489-D9D049482883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBD69C4-6085-42D0-8454-40E7C9D478E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBD69C4-6085-42D0-8454-40E7C9D478E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBD69C4-6085-42D0-8454-40E7C9D478E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBD69C4-6085-42D0-8454-40E7C9D478E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

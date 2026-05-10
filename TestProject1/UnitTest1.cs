@@ -14,11 +14,11 @@ namespace TestProject1
         /// <summary>
         /// RomajiToHiraganaメソッドによる変換結果をテストデータセットと比較する。
         /// </summary>
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\TestData.xml", "row", DataAccessMethod.Sequential), DeploymentItem("TestProject1\\TestData.xml"), TestMethod]
+        [DeploymentItem("TestProject1\\TestData.xml"), DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\TestData.xml", "KeyValuePair", DataAccessMethod.Sequential), TestMethod]
         public void TestMethod1()
         {
-            string romaji = (string)TestContext.DataRow["input"];
-            string hiragana = (string)TestContext.DataRow["output"];
+            string romaji = (string)TestContext.DataRow["Key"];
+            string hiragana = (string)TestContext.DataRow["Value"];
             string temp = RomajiToHiraganaLibrary.RomajiToHiragana.Convert(romaji);
             Assert.AreEqual(temp, hiragana, "ローマ字置換失敗");
         }

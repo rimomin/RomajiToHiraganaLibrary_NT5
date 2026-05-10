@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<dataset>
-  <row>
-    <input>Shigobu</input>
-    <output>しごぶ</output>
-  </row>
-  <row>
-    <input>konnnitiwa</input>
-    <output>こんにちわ</output>
-  </row>
-  <row>
-    <input>しごぶShigobu</input>
-    <output>しごぶしごぶ</output>
-  </row>
-  <row>
-    <input>こんにちわkonnnitiwa</input>
-    <output>こんにちわこんにちわ</output>
-  </row>
-  <row>
-    <input>やゆよ</input>
-    <output>やゆよ</output>
-  </row>
-</dataset>
+<Dictionary xmlns="urn:StringPairDictionary.xsd">
+  <KeyValuePair>
+    <Key>Shigobu</Key>
+    <Value>しごぶ</Value>
+  </KeyValuePair>
+  <KeyValuePair>
+    <Key>konnnitiwa</Key>
+    <Value>こんにちわ</Value>
+  </KeyValuePair>
+  <KeyValuePair>
+    <Key>しごぶShigobu</Key>
+    <Value>しごぶしごぶ</Value>
+  </KeyValuePair>
+  <KeyValuePair>
+    <Key>こんにちわkonnnitiwa</Key>
+    <Value>こんにちわこんにちわ</Value>
+  </KeyValuePair>
+  <KeyValuePair>
+    <Key>やゆよ</Key>
+    <Value>やゆよ</Value>
+  </KeyValuePair>
+</Dictionary>
 
