@@ -13,6 +13,7 @@ namespace RomajiToHiraganaLibrary
         /// 文字数の多い順に置換する必要があるため、文字数が長いものが先に来るよう配列に定義している。
         private static readonly KeyValuePair<string, string>[] romajiHiraganaPairs =
         {
+            //領域 romajiHiraganaPairs の内容はビルド時に RomajiHiraganaPairMaker によって RomajiHiraganaPairs.xml から自動的に生成されます。
 #region romajiHiraganaPairs
             new KeyValuePair<string, string>("bbya","っびゃ"),
             new KeyValuePair<string, string>("bbye","っびぇ"),
