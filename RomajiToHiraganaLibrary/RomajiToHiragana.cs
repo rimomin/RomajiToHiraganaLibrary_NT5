@@ -549,10 +549,10 @@ namespace RomajiToHiraganaLibrary
         /// <returns>置換された文字列</returns>
         public static string Convert(string sentence)
         {
-            string temp = sentence;
+            string temp = sentence.ToLowerInvariant();
             foreach (var romajiHiraganaPair in romajiHiraganaPairs)
             {
-                temp = temp.ToLowerInvariant().Replace(romajiHiraganaPair.Key, romajiHiraganaPair.Value);
+                temp = temp.Replace(romajiHiraganaPair.Key, romajiHiraganaPair.Value);
             }
 
             return temp;
