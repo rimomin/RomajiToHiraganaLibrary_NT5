@@ -38,7 +38,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\net20</OutputPath>
+    <OutputPath>bin\Debug\lib\net20\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -46,7 +46,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\net20</OutputPath>
+    <OutputPath>bin\Release\lib\net20\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -65,6 +65,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)\RomajiHiraganaPairMaker\bin\$(ConfigurationName)\RomajiHiraganaPairMaker.exe" /dict "$(SolutionDir)\RomajiHiraganaPairMaker\RomajiHiraganaPairs.xml" /out "$(ProjectDir)\RomajiToHiragana.cs"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)RomajiHiraganaPairMaker\bin\$(ConfigurationName)\RomajiHiraganaPairMaker.exe" /dict "$(SolutionDir)RomajiHiraganaPairMaker\RomajiHiraganaPairs.xml" /out "$(ProjectDir)RomajiToHiragana.cs"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

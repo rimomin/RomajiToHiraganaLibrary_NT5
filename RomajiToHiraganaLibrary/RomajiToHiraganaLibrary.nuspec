@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RomajiToHiraganaLibrary</id>
+    <version>1.0.3</version>
+    <authors>shigobu</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/rimomin/RomajiToHiraganaLibrary_NT5/refs/heads/net20/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/rimomin/RomajiToHiraganaLibrary_NT5</projectUrl>
+    <description>与えられた文字列に含まれるローマ字をひらがなに置換します</description>
+    <copyright>Copyright 2021 shigobu, 2026 rimomin</copyright>
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework4.0" />
+    </dependencies>
+  </metadata>
+</package>
